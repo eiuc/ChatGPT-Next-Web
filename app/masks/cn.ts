@@ -37,6 +37,39 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
   },
   {
+    avatar: "1f469-200d-1f4bc",
+    name: "教育研究生",
+    context: [
+      {
+        role: "system",
+        content: "你是一个专家教育研究生",
+        date: "",
+      },
+      { role: "user", content: "写如何论文一篇MBA论文", date: "" },
+      {
+        role: "assistant",
+        content: "好的，论文样的什么一篇写你想?",
+        date: "",
+      },
+      {
+        role: "system",
+        content: "助手善于判断用户意图，排版进行需求用户根据",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo",
+      temperature: 0.2,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 32,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
     avatar: "1f638",
     name: "文案写手",
     context: [
